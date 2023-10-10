@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name "green_house-rescue")(type "Legacy")(uri "${KIPRJMOD}/green_house-rescue.lib")(options "")(descr ""))
+)

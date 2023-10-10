@@ -1,0 +1,971 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Sensor:DHT11 U?
+U 1 1 6505F957
+P 8400 5350
+F 0 "U?" H 8156 5396 50  0000 R CNN
+F 1 "DHT11" V 8156 5305 50  0000 R CNN
+F 2 "Sensor:Aosong_DHT11_5.5x12.0_P2.54mm" H 8400 4950 50  0001 C CNN
+F 3 "http://akizukidenshi.com/download/ds/aosong/DHT11.pdf" H 8550 5600 50  0001 C CNN
+	1    8400 5350
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:Conn_01x03_Female LDR-SENSOR
+U 1 1 65063B55
+P 8450 4250
+F 0 "LDR-SENSOR" H 8478 4276 50  0000 L CNN
+F 1 "Conn_01x03_Female" H 8478 4185 50  0000 L CNN
+F 2 "" H 8450 4250 50  0001 C CNN
+F 3 "~" H 8450 4250 50  0001 C CNN
+	1    8450 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x04_Female SOIL-MOISTURE-SENSOR
+U 1 1 65067D5D
+P 8450 3600
+F 0 "SOIL-MOISTURE-SENSOR" H 8478 3576 50  0000 L CNN
+F 1 "Conn_01x04_Female" H 8478 3485 50  0000 L CNN
+F 2 "" H 8450 3600 50  0001 C CNN
+F 3 "~" H 8450 3600 50  0001 C CNN
+	1    8450 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9500 3250 9500 4000
+Wire Wire Line
+	8250 4350 8150 4350
+Wire Wire Line
+	8150 4350 8150 4500
+Wire Wire Line
+	8150 4500 9500 4500
+Connection ~ 9500 4500
+$Comp
+L ESP32-DEVKIT-V1:ESP32-DEVKIT-V1 U?
+U 1 1 650B9C56
+P 6750 4250
+F 0 "U?" H 6750 5517 50  0000 C CNN
+F 1 "ESP32-DEVKIT-V1" H 6750 5426 50  0000 C CNN
+F 2 "MODULE_ESP32_DEVKIT_V1" H 6750 4100 50  0001 L BNN
+F 3 "" H 6750 4250 50  0001 L BNN
+F 4 "Do it" H 6750 4350 50  0001 L BNN "MF"
+F 5 "6.8 mm" H 6750 4100 50  0001 L BNN "MAXIMUM_PACKAGE_HEIGHT"
+F 6 "None" H 6750 4350 50  0001 L BNN "Package"
+F 7 "None" H 6750 4350 50  0001 L BNN "Price"
+F 8 "https://www.snapeda.com/parts/ESP32-DEVKIT-V1/Do+it/view-part/?ref=eda" H 6750 4100 50  0001 L BNN "Check_prices"
+F 9 "Manufacturer Recommendations" H 6750 4100 50  0001 L BNN "STANDARD"
+F 10 "N/A" H 6750 4250 50  0001 L BNN "PARTREV"
+F 11 "https://www.snapeda.com/parts/ESP32-DEVKIT-V1/Do+it/view-part/?ref=snap" H 6750 4100 50  0001 L BNN "SnapEDA_Link"
+F 12 "ESP32-DEVKIT-V1" H 6750 4100 50  0001 L BNN "MP"
+F 13 "\\nDual core, Wi-Fi: 2.4 GHz up to 150 Mbits/s,BLE (Bluetooth Low Energy) and legacy Bluetooth, 32 bits, Up to 240 MHz\\n" H 6750 4100 50  0001 L BNN "Description"
+F 14 "Not in stock" H 6750 4100 50  0001 L BNN "Availability"
+F 15 "DOIT" H 6750 4350 50  0001 L BNN "MANUFACTURER"
+	1    6750 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8400 5650 8400 5800
+Wire Wire Line
+	7650 4000 7350 4000
+Wire Wire Line
+	8250 4150 7800 4150
+Wire Wire Line
+	7800 4150 7800 3900
+Wire Wire Line
+	7800 3900 7350 3900
+$Comp
+L power:GND #PWR?
+U 1 1 650BD999
+P 8000 4250
+F 0 "#PWR?" H 8000 4000 50  0001 C CNN
+F 1 "GND" H 8005 4077 50  0000 C CNN
+F 2 "" H 8000 4250 50  0001 C CNN
+F 3 "" H 8000 4250 50  0001 C CNN
+	1    8000 4250
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 650BDD88
+P 7950 5450
+F 0 "#PWR?" H 7950 5200 50  0001 C CNN
+F 1 "GND" H 7955 5277 50  0000 C CNN
+F 2 "" H 7950 5450 50  0001 C CNN
+F 3 "" H 7950 5450 50  0001 C CNN
+	1    7950 5450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7950 5450 7950 5350
+Wire Wire Line
+	7950 5350 8100 5350
+Wire Wire Line
+	7350 3250 9500 3250
+Wire Wire Line
+	8250 3800 8100 3800
+Wire Wire Line
+	8100 3800 8100 4000
+Wire Wire Line
+	8100 4000 9500 4000
+Connection ~ 9500 4000
+Wire Wire Line
+	9500 4000 9500 4500
+Wire Wire Line
+	7350 3800 7700 3800
+Wire Wire Line
+	7700 3800 7700 3500
+Wire Wire Line
+	7700 3500 8250 3500
+$Comp
+L power:GND #PWR?
+U 1 1 650C778F
+P 7500 5350
+F 0 "#PWR?" H 7500 5100 50  0001 C CNN
+F 1 "GND" H 7505 5177 50  0000 C CNN
+F 2 "" H 7500 5350 50  0001 C CNN
+F 3 "" H 7500 5350 50  0001 C CNN
+	1    7500 5350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7500 5350 7500 5250
+Wire Wire Line
+	7500 5250 7350 5250
+$Comp
+L Device:C C?
+U 1 1 650C98D2
+P 8400 4900
+F 0 "C?" V 8148 4900 50  0000 C CNN
+F 1 "C" V 8239 4900 50  0000 C CNN
+F 2 "" H 8438 4750 50  0001 C CNN
+F 3 "~" H 8400 4900 50  0001 C CNN
+	1    8400 4900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8700 5350 8900 5350
+Wire Wire Line
+	9500 4500 9500 5350
+Wire Wire Line
+	7650 5800 8400 5800
+Wire Wire Line
+	7650 4000 7650 5800
+Wire Wire Line
+	8550 4900 8900 4900
+Wire Wire Line
+	8900 4900 8900 5350
+Connection ~ 8900 5350
+Wire Wire Line
+	8900 5350 9500 5350
+Wire Wire Line
+	8250 4900 7950 4900
+Wire Wire Line
+	7950 4900 7950 5350
+Connection ~ 7950 5350
+$Comp
+L Regulator_Linear:LM7805_TO220 U?
+U 1 1 650DA75C
+P 6150 1900
+F 0 "U?" H 6150 2142 50  0000 C CNN
+F 1 "LM7805_TO220" H 6150 2051 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 6150 2125 50  0001 C CIN
+F 3 "http://www.fairchildsemi.com/ds/LM/LM7805.pdf" H 6150 1850 50  0001 C CNN
+	1    6150 1900
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+12C #PWR?
+U 1 1 650E7433
+P 6500 1450
+F 0 "#PWR?" H 6500 1300 50  0001 C CNN
+F 1 "+12C" H 6515 1623 50  0000 C CNN
+F 2 "" H 6500 1450 50  0001 C CNN
+F 3 "" H 6500 1450 50  0001 C CNN
+	1    6500 1450
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 650E953D
+P 5600 1900
+F 0 "#PWR?" H 5600 1650 50  0001 C CNN
+F 1 "GND" H 5605 1727 50  0000 C CNN
+F 2 "" H 5600 1900 50  0001 C CNN
+F 3 "" H 5600 1900 50  0001 C CNN
+	1    5600 1900
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 650F3F92
+P 6000 1450
+F 0 "C?" V 5748 1450 50  0000 C CNN
+F 1 "C" V 5839 1450 50  0000 C CNN
+F 2 "" H 6038 1300 50  0001 C CNN
+F 3 "~" H 6000 1450 50  0001 C CNN
+	1    6000 1450
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 650F55B2
+P 6000 2500
+F 0 "C?" V 5748 2500 50  0000 C CNN
+F 1 "C" V 5839 2500 50  0000 C CNN
+F 2 "" H 6038 2350 50  0001 C CNN
+F 3 "~" H 6000 2500 50  0001 C CNN
+	1    6000 2500
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:CP C?
+U 1 1 650F5AB8
+P 6000 2900
+F 0 "C?" V 5745 2900 50  0000 C CNN
+F 1 "CP" V 5836 2900 50  0000 C CNN
+F 2 "" H 6038 2750 50  0001 C CNN
+F 3 "~" H 6000 2900 50  0001 C CNN
+	1    6000 2900
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:CP C?
+U 1 1 650F636A
+P 6000 1000
+F 0 "C?" V 5745 1000 50  0000 C CNN
+F 1 "CP" V 5836 1000 50  0000 C CNN
+F 2 "" H 6038 850 50  0001 C CNN
+F 3 "~" H 6000 1000 50  0001 C CNN
+	1    6000 1000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6150 1600 6150 1450
+Wire Wire Line
+	6150 1450 6150 1000
+Connection ~ 6150 1450
+Wire Wire Line
+	5850 1900 5850 1450
+Wire Wire Line
+	5850 1450 5850 1000
+Connection ~ 5850 1450
+Connection ~ 5850 1900
+Wire Wire Line
+	5850 2900 5850 2500
+Connection ~ 5850 2500
+Wire Wire Line
+	6150 2900 6150 2500
+Wire Wire Line
+	6150 2200 6150 2500
+Connection ~ 6150 2500
+Wire Wire Line
+	5850 2500 5850 1900
+Wire Wire Line
+	5600 1900 5850 1900
+Wire Wire Line
+	6150 1450 6500 1450
+$Comp
+L power:GND #PWR?
+U 1 1 651330E8
+P 8000 3700
+F 0 "#PWR?" H 8000 3450 50  0001 C CNN
+F 1 "GND" V 8005 3572 50  0000 R CNN
+F 2 "" H 8000 3700 50  0001 C CNN
+F 3 "" H 8000 3700 50  0001 C CNN
+	1    8000 3700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8000 3700 8250 3700
+Wire Wire Line
+	8000 4250 8250 4250
+$Comp
+L Device:R R?
+U 1 1 6514FA34
+P 6150 5600
+F 0 "R?" H 6220 5646 50  0000 L CNN
+F 1 "R" H 6220 5555 50  0000 L CNN
+F 2 "" V 6080 5600 50  0001 C CNN
+F 3 "~" H 6150 5600 50  0001 C CNN
+	1    6150 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Isolator:PC817 U?
+U 1 1 6515021A
+P 6050 6200
+F 0 "U?" H 6050 6525 50  0000 C CNN
+F 1 "PC817" H 6050 6434 50  0000 C CNN
+F 2 "Package_DIP:DIP-4_W7.62mm" H 5850 6000 50  0001 L CIN
+F 3 "http://www.soselectronic.cz/a_info/resource/d/pc817.pdf" H 6050 6200 50  0001 L CNN
+	1    6050 6200
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 6515D664
+P 5950 5700
+F 0 "#PWR?" H 5950 5450 50  0001 C CNN
+F 1 "GND" H 5955 5527 50  0000 C CNN
+F 2 "" H 5950 5700 50  0001 C CNN
+F 3 "" H 5950 5700 50  0001 C CNN
+	1    5950 5700
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 6515E9EB
+P 6150 6750
+F 0 "R?" H 6220 6796 50  0000 L CNN
+F 1 "R" H 6220 6705 50  0000 L CNN
+F 2 "" V 6080 6750 50  0001 C CNN
+F 3 "~" H 6150 6750 50  0001 C CNN
+	1    6150 6750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR?
+U 1 1 6515FA39
+P 6150 7000
+F 0 "#PWR?" H 6150 6850 50  0001 C CNN
+F 1 "+12V" H 6165 7173 50  0000 C CNN
+F 2 "" H 6150 7000 50  0001 C CNN
+F 3 "" H 6150 7000 50  0001 C CNN
+	1    6150 7000
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6150 5450 6150 5200
+Wire Wire Line
+	6150 5900 6150 5750
+Wire Wire Line
+	6150 6600 6150 6500
+Wire Wire Line
+	6150 7000 6150 6900
+$Comp
+L Transistor_BJT:TIP122 Q?
+U 1 1 6517A6B6
+P 5450 6100
+F 0 "Q?" H 5657 6054 50  0000 L CNN
+F 1 "TIP122" H 5657 6145 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 5650 6025 50  0001 L CIN
+F 3 "http://www.fairchildsemi.com/ds/TI/TIP120.pdf" H 5450 6100 50  0001 L CNN
+	1    5450 6100
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5950 6500 5950 6700
+Wire Wire Line
+	5950 5700 5950 5900
+$Comp
+L power:GND #PWR?
+U 1 1 65187643
+P 5350 5700
+F 0 "#PWR?" H 5350 5450 50  0001 C CNN
+F 1 "GND" H 5355 5527 50  0000 C CNN
+F 2 "" H 5350 5700 50  0001 C CNN
+F 3 "" H 5350 5700 50  0001 C CNN
+	1    5350 5700
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5350 5900 5350 5700
+Wire Wire Line
+	5650 6700 5950 6700
+Wire Wire Line
+	5650 6100 5650 6700
+$Comp
+L Connector:Conn_01x02_Female J?
+U 1 1 6519292D
+P 4850 6450
+F 0 "J?" V 4788 6262 50  0000 R CNN
+F 1 "MOTOR-1" V 4697 6262 50  0000 R CNN
+F 2 "" H 4850 6450 50  0001 C CNN
+F 3 "~" H 4850 6450 50  0001 C CNN
+	1    4850 6450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:Conn_01x02_Female J?
+U 1 1 6519354F
+P 5250 6450
+F 0 "J?" V 5188 6262 50  0000 R CNN
+F 1 "MOTOR-2" V 5097 6262 50  0000 R CNN
+F 2 "" H 5250 6450 50  0001 C CNN
+F 3 "~" H 5250 6450 50  0001 C CNN
+	1    5250 6450
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4850 6650 4650 6650
+Wire Wire Line
+	4650 6650 4650 6300
+Wire Wire Line
+	4650 6300 5050 6300
+Wire Wire Line
+	5250 6650 5050 6650
+Wire Wire Line
+	5050 6650 5050 6300
+Connection ~ 5050 6300
+Wire Wire Line
+	5050 6300 5350 6300
+Wire Wire Line
+	5350 7000 5350 6950
+Wire Wire Line
+	4950 7000 4950 6950
+$Comp
+L power:+12V #PWR?
+U 1 1 6519C2F2
+P 4950 7000
+F 0 "#PWR?" H 4950 6850 50  0001 C CNN
+F 1 "+12V" H 4965 7173 50  0000 C CNN
+F 2 "" H 4950 7000 50  0001 C CNN
+F 3 "" H 4950 7000 50  0001 C CNN
+	1    4950 7000
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+12V #PWR?
+U 1 1 6519B4D7
+P 5350 7000
+F 0 "#PWR?" H 5350 6850 50  0001 C CNN
+F 1 "+12V" H 5365 7173 50  0000 C CNN
+F 2 "" H 5350 7000 50  0001 C CNN
+F 3 "" H 5350 7000 50  0001 C CNN
+	1    5350 7000
+	-1   0    0    1   
+$EndComp
+$Comp
+L Diode:1N4007 D?
+U 1 1 651A976E
+P 4800 6950
+F 0 "D?" H 4800 7166 50  0000 C CNN
+F 1 "1N4007" H 4800 7075 50  0000 C CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 4800 6775 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 4800 6950 50  0001 C CNN
+	1    4800 6950
+	-1   0    0    1   
+$EndComp
+Connection ~ 4950 6950
+Wire Wire Line
+	4650 6950 4950 6950
+Connection ~ 4650 6950
+$Comp
+L Diode:1N4007 D?
+U 1 1 651B8BFD
+P 5200 6950
+F 0 "D?" H 5200 6734 50  0000 C CNN
+F 1 "1N4007" H 5200 6825 50  0000 C CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 5200 6775 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 5200 6950 50  0001 C CNN
+	1    5200 6950
+	-1   0    0    1   
+$EndComp
+Connection ~ 5350 6950
+Connection ~ 3050 6950
+$Comp
+L Diode:1N4007 D?
+U 1 1 651C6E98
+P 2900 6950
+F 0 "D?" H 2900 6734 50  0000 C CNN
+F 1 "1N4007" H 2900 6825 50  0000 C CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 2900 6775 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 2900 6950 50  0001 C CNN
+	1    2900 6950
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3050 7000 3050 6950
+Wire Wire Line
+	2750 6300 3050 6300
+Wire Wire Line
+	2750 6650 2750 6300
+Wire Wire Line
+	2950 6650 2750 6650
+$Comp
+L Connector:Conn_01x02_Female J?
+U 1 1 651C6E6F
+P 2950 6450
+F 0 "J?" V 2888 6262 50  0000 R CNN
+F 1 "WATER-PUMP" V 2797 6262 50  0000 R CNN
+F 2 "" H 2950 6450 50  0001 C CNN
+F 3 "~" H 2950 6450 50  0001 C CNN
+	1    2950 6450
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3350 6100 3350 6700
+Wire Wire Line
+	3350 6700 3650 6700
+Wire Wire Line
+	3050 5900 3050 5700
+$Comp
+L power:GND #PWR?
+U 1 1 651C6E60
+P 3050 5700
+F 0 "#PWR?" H 3050 5450 50  0001 C CNN
+F 1 "GND" H 3055 5527 50  0000 C CNN
+F 2 "" H 3050 5700 50  0001 C CNN
+F 3 "" H 3050 5700 50  0001 C CNN
+	1    3050 5700
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3650 5700 3650 5900
+Wire Wire Line
+	3650 6500 3650 6700
+$Comp
+L Transistor_BJT:TIP122 Q?
+U 1 1 651C6E58
+P 3150 6100
+F 0 "Q?" H 3357 6054 50  0000 L CNN
+F 1 "TIP122" H 3357 6145 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 3350 6025 50  0001 L CIN
+F 3 "http://www.fairchildsemi.com/ds/TI/TIP120.pdf" H 3150 6100 50  0001 L CNN
+	1    3150 6100
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3850 7000 3850 6900
+Wire Wire Line
+	3850 6600 3850 6500
+Wire Wire Line
+	3850 5900 3850 5750
+$Comp
+L Device:R R?
+U 1 1 651C6E48
+P 3850 6750
+F 0 "R?" H 3920 6796 50  0000 L CNN
+F 1 "R" H 3920 6705 50  0000 L CNN
+F 2 "" V 3780 6750 50  0001 C CNN
+F 3 "~" H 3850 6750 50  0001 C CNN
+	1    3850 6750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 651C6E42
+P 3650 5700
+F 0 "#PWR?" H 3650 5450 50  0001 C CNN
+F 1 "GND" H 3655 5527 50  0000 C CNN
+F 2 "" H 3650 5700 50  0001 C CNN
+F 3 "" H 3650 5700 50  0001 C CNN
+	1    3650 5700
+	-1   0    0    1   
+$EndComp
+$Comp
+L Isolator:PC817 U?
+U 1 1 651C6E3C
+P 3750 6200
+F 0 "U?" H 3750 6525 50  0000 C CNN
+F 1 "PC817" H 3750 6434 50  0000 C CNN
+F 2 "Package_DIP:DIP-4_W7.62mm" H 3550 6000 50  0001 L CIN
+F 3 "http://www.soselectronic.cz/a_info/resource/d/pc817.pdf" H 3750 6200 50  0001 L CNN
+	1    3750 6200
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 651C6E36
+P 3850 5600
+F 0 "R?" H 3920 5646 50  0000 L CNN
+F 1 "R" H 3920 5555 50  0000 L CNN
+F 2 "" V 3780 5600 50  0001 C CNN
+F 3 "~" H 3850 5600 50  0001 C CNN
+	1    3850 5600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3050 6650 3050 6950
+Wire Wire Line
+	2750 6650 2750 6950
+Connection ~ 2750 6650
+Wire Wire Line
+	4950 6650 4950 6950
+Wire Wire Line
+	4650 6650 4650 6950
+Connection ~ 4650 6650
+Wire Wire Line
+	5350 6650 5350 6950
+Wire Wire Line
+	5050 6650 5050 6950
+Connection ~ 5050 6650
+$Comp
+L power:+12V #PWR?
+U 1 1 651C6E4E
+P 3850 7000
+F 0 "#PWR?" H 3850 6850 50  0001 C CNN
+F 1 "+12V" H 3865 7173 50  0000 C CNN
+F 2 "" H 3850 7000 50  0001 C CNN
+F 3 "" H 3850 7000 50  0001 C CNN
+	1    3850 7000
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 65299A11
+P 3050 7000
+F 0 "#PWR?" H 3050 6850 50  0001 C CNN
+F 1 "+5V" H 3065 7173 50  0000 C CNN
+F 2 "" H 3050 7000 50  0001 C CNN
+F 3 "" H 3050 7000 50  0001 C CNN
+	1    3050 7000
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6150 5100 3850 5100
+Wire Wire Line
+	3850 5100 3850 5450
+Wire Wire Line
+	2900 4400 3200 4400
+Wire Wire Line
+	3200 3400 3200 3600
+Wire Wire Line
+	3200 4200 3200 4400
+Wire Wire Line
+	3400 4700 3400 4600
+Wire Wire Line
+	3400 4300 3400 4200
+Wire Wire Line
+	3400 3600 3400 3450
+$Comp
+L Device:R R?
+U 1 1 652B4D24
+P 3400 4450
+F 0 "R?" H 3470 4496 50  0000 L CNN
+F 1 "R" H 3470 4405 50  0000 L CNN
+F 2 "" V 3330 4450 50  0001 C CNN
+F 3 "~" H 3400 4450 50  0001 C CNN
+	1    3400 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 652B4D2A
+P 3200 3400
+F 0 "#PWR?" H 3200 3150 50  0001 C CNN
+F 1 "GND" H 3205 3227 50  0000 C CNN
+F 2 "" H 3200 3400 50  0001 C CNN
+F 3 "" H 3200 3400 50  0001 C CNN
+	1    3200 3400
+	-1   0    0    1   
+$EndComp
+$Comp
+L Isolator:PC817 U?
+U 1 1 652B4D30
+P 3300 3900
+F 0 "U?" H 3300 4225 50  0000 C CNN
+F 1 "PC817" H 3300 4134 50  0000 C CNN
+F 2 "Package_DIP:DIP-4_W7.62mm" H 3100 3700 50  0001 L CIN
+F 3 "http://www.soselectronic.cz/a_info/resource/d/pc817.pdf" H 3300 3900 50  0001 L CNN
+	1    3300 3900
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 652B4D36
+P 3400 3300
+F 0 "R?" H 3470 3346 50  0000 L CNN
+F 1 "R" H 3470 3255 50  0000 L CNN
+F 2 "" V 3330 3300 50  0001 C CNN
+F 3 "~" H 3400 3300 50  0001 C CNN
+	1    3400 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR?
+U 1 1 652B4D3F
+P 3400 4700
+F 0 "#PWR?" H 3400 4550 50  0001 C CNN
+F 1 "+12V" H 3415 4873 50  0000 C CNN
+F 2 "" H 3400 4700 50  0001 C CNN
+F 3 "" H 3400 4700 50  0001 C CNN
+	1    3400 4700
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+12V #PWR?
+U 1 1 652D197E
+P 2600 4700
+F 0 "#PWR?" H 2600 4550 50  0001 C CNN
+F 1 "+12V" H 2615 4873 50  0000 C CNN
+F 2 "" H 2600 4700 50  0001 C CNN
+F 3 "" H 2600 4700 50  0001 C CNN
+	1    2600 4700
+	-1   0    0    1   
+$EndComp
+$Comp
+L Relay:SANYOU_SRD_Form_C K?
+U 1 1 652F73DC
+P 2300 3150
+F 0 "K?" H 2730 3196 50  0000 L CNN
+F 1 "SANYOU_SRD_Form_C" H 2730 3105 50  0000 L CNN
+F 2 "Relay_THT:Relay_SPDT_SANYOU_SRD_Series_Form_C" H 2750 3100 50  0001 L CNN
+F 3 "http://www.sanyourelay.ca/public/products/pdf/SRD.pdf" H 2300 3150 50  0001 C CNN
+	1    2300 3150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 65310FD9
+P 1900 4700
+F 0 "#PWR?" H 1900 4450 50  0001 C CNN
+F 1 "GND" H 1905 4527 50  0000 C CNN
+F 2 "" H 1900 4700 50  0001 C CNN
+F 3 "" H 1900 4700 50  0001 C CNN
+	1    1900 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1900 3350 2000 3350
+Wire Wire Line
+	2900 4050 2900 4400
+$Comp
+L Diode:1N4007 D?
+U 1 1 6532D92C
+P 2250 3850
+F 0 "D?" H 2250 3634 50  0000 C CNN
+F 1 "1N4007" H 2250 3725 50  0000 C CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 2250 3675 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 2250 3850 50  0001 C CNN
+	1    2250 3850
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2400 3850 2600 3850
+Wire Wire Line
+	2600 3350 2600 3850
+Wire Wire Line
+	1900 3350 1900 3850
+Wire Wire Line
+	2100 3850 1900 3850
+Connection ~ 1900 3850
+Wire Wire Line
+	2600 4250 2600 4700
+Wire Wire Line
+	1900 3850 1900 4700
+$Comp
+L Transistor_BJT:TIP122 Q?
+U 1 1 6536E223
+P 2700 4050
+F 0 "Q?" H 2907 4004 50  0000 L CNN
+F 1 "TIP122" H 2907 4095 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 2900 3975 50  0001 L CIN
+F 3 "http://www.fairchildsemi.com/ds/TI/TIP120.pdf" H 2700 4050 50  0001 L CNN
+	1    2700 4050
+	-1   0    0    1   
+$EndComp
+Connection ~ 2600 3850
+$Comp
+L Connector:Conn_01x02_Female J?
+U 1 1 6537BC8C
+P 2300 1550
+F 0 "J?" V 2238 1362 50  0000 R CNN
+F 1 "Conn_01x02_Female" V 2147 1362 50  0000 R CNN
+F 2 "" H 2300 1550 50  0001 C CNN
+F 3 "~" H 2300 1550 50  0001 C CNN
+	1    2300 1550
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2600 1750 2600 2950
+Wire Wire Line
+	2400 1750 2600 1750
+Wire Wire Line
+	2000 2850 2000 1750
+Wire Wire Line
+	2000 1750 2300 1750
+Wire Wire Line
+	4900 4400 5200 4400
+Wire Wire Line
+	5200 3400 5200 3600
+Wire Wire Line
+	5200 4200 5200 4400
+Wire Wire Line
+	5400 4700 5400 4600
+Wire Wire Line
+	5400 4300 5400 4200
+Wire Wire Line
+	5400 3600 5400 3450
+$Comp
+L Device:R R?
+U 1 1 653B21C2
+P 5400 4450
+F 0 "R?" H 5470 4496 50  0000 L CNN
+F 1 "R" H 5470 4405 50  0000 L CNN
+F 2 "" V 5330 4450 50  0001 C CNN
+F 3 "~" H 5400 4450 50  0001 C CNN
+	1    5400 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 653B21C8
+P 5200 3400
+F 0 "#PWR?" H 5200 3150 50  0001 C CNN
+F 1 "GND" H 5205 3227 50  0000 C CNN
+F 2 "" H 5200 3400 50  0001 C CNN
+F 3 "" H 5200 3400 50  0001 C CNN
+	1    5200 3400
+	-1   0    0    1   
+$EndComp
+$Comp
+L Isolator:PC817 U?
+U 1 1 653B21CE
+P 5300 3900
+F 0 "U?" H 5300 4225 50  0000 C CNN
+F 1 "PC817" H 5300 4134 50  0000 C CNN
+F 2 "Package_DIP:DIP-4_W7.62mm" H 5100 3700 50  0001 L CIN
+F 3 "http://www.soselectronic.cz/a_info/resource/d/pc817.pdf" H 5300 3900 50  0001 L CNN
+	1    5300 3900
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 653B21D4
+P 5400 3300
+F 0 "R?" H 5470 3346 50  0000 L CNN
+F 1 "R" H 5470 3255 50  0000 L CNN
+F 2 "" V 5330 3300 50  0001 C CNN
+F 3 "~" H 5400 3300 50  0001 C CNN
+	1    5400 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR?
+U 1 1 653B21DA
+P 5400 4700
+F 0 "#PWR?" H 5400 4550 50  0001 C CNN
+F 1 "+12V" H 5415 4873 50  0000 C CNN
+F 2 "" H 5400 4700 50  0001 C CNN
+F 3 "" H 5400 4700 50  0001 C CNN
+	1    5400 4700
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+12V #PWR?
+U 1 1 653B21E1
+P 4600 4700
+F 0 "#PWR?" H 4600 4550 50  0001 C CNN
+F 1 "+12V" H 4615 4873 50  0000 C CNN
+F 2 "" H 4600 4700 50  0001 C CNN
+F 3 "" H 4600 4700 50  0001 C CNN
+	1    4600 4700
+	-1   0    0    1   
+$EndComp
+$Comp
+L Relay:SANYOU_SRD_Form_C K?
+U 1 1 653B21E7
+P 4300 3150
+F 0 "K?" H 4730 3196 50  0000 L CNN
+F 1 "SANYOU_SRD_Form_C" H 4730 3105 50  0000 L CNN
+F 2 "Relay_THT:Relay_SPDT_SANYOU_SRD_Series_Form_C" H 4750 3100 50  0001 L CNN
+F 3 "http://www.sanyourelay.ca/public/products/pdf/SRD.pdf" H 4300 3150 50  0001 C CNN
+	1    4300 3150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 653B21ED
+P 3900 4700
+F 0 "#PWR?" H 3900 4450 50  0001 C CNN
+F 1 "GND" H 3905 4527 50  0000 C CNN
+F 2 "" H 3900 4700 50  0001 C CNN
+F 3 "" H 3900 4700 50  0001 C CNN
+	1    3900 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3900 3350 4000 3350
+Wire Wire Line
+	4900 4050 4900 4400
+$Comp
+L Diode:1N4007 D?
+U 1 1 653B21F5
+P 4250 3850
+F 0 "D?" H 4250 3634 50  0000 C CNN
+F 1 "1N4007" H 4250 3725 50  0000 C CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 4250 3675 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 4250 3850 50  0001 C CNN
+	1    4250 3850
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4400 3850 4600 3850
+Wire Wire Line
+	4600 3350 4600 3850
+Wire Wire Line
+	3900 3350 3900 3850
+Wire Wire Line
+	4100 3850 3900 3850
+Connection ~ 3900 3850
+Wire Wire Line
+	4600 4250 4600 4700
+Wire Wire Line
+	3900 3850 3900 4700
+$Comp
+L Transistor_BJT:TIP122 Q?
+U 1 1 653B2202
+P 4700 4050
+F 0 "Q?" H 4907 4004 50  0000 L CNN
+F 1 "TIP122" H 4907 4095 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 4900 3975 50  0001 L CIN
+F 3 "http://www.fairchildsemi.com/ds/TI/TIP120.pdf" H 4700 4050 50  0001 L CNN
+	1    4700 4050
+	-1   0    0    1   
+$EndComp
+Connection ~ 4600 3850
+$Comp
+L Connector:Conn_01x02_Female J?
+U 1 1 653B2209
+P 4300 1550
+F 0 "J?" V 4238 1362 50  0000 R CNN
+F 1 "Conn_01x02_Female" V 4147 1362 50  0000 R CNN
+F 2 "" H 4300 1550 50  0001 C CNN
+F 3 "~" H 4300 1550 50  0001 C CNN
+	1    4300 1550
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4600 1750 4600 2950
+Wire Wire Line
+	4400 1750 4600 1750
+Wire Wire Line
+	4000 2850 4000 1750
+Wire Wire Line
+	4000 1750 4300 1750
+Wire Wire Line
+	3400 3150 3400 3100
+Wire Wire Line
+	3400 3100 3600 3100
+Wire Wire Line
+	3600 3100 3600 5000
+Wire Wire Line
+	3600 5000 6150 5000
+Wire Wire Line
+	6150 4900 5750 4900
+Wire Wire Line
+	5750 4900 5750 3100
+Wire Wire Line
+	5750 3100 5400 3100
+Wire Wire Line
+	5400 3100 5400 3150
+Wire Wire Line
+	6150 2900 6150 3250
+Connection ~ 6150 2900
+$EndSCHEMATC
